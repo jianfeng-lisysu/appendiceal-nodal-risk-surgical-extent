@@ -1,0 +1,10 @@
+# Never commit patient-level data
+data/
+02_data/
+*.csv.gz
+analytic_cohort*.csv
+*SEER*.txt
+*.RData
+.Rhistory
+.RData
+.Rproj.user/
