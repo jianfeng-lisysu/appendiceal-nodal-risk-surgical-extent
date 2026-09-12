@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "Analysis code: predicted nodal risk and surgical extent in nonmetastatic appendiceal adenocarcinoma"
+authors:
+  - family-names: Li
+    given-names: Jianfeng
+  - family-names: Wu
+    given-names: Jiaxin
+  - family-names: Kuo
+    given-names: Zi Chong
+  - family-names: Cai
+    given-names: Nan
+  - family-names: Liu
+    given-names: Zhichao
+license: MIT
+repository-code: "https://github.com/<your-account>/appendiceal-nodal-risk-surgical-extent"
