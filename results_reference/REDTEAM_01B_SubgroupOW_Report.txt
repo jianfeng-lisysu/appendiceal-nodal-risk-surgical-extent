@@ -1,0 +1,47 @@
+======================================================================
+A6 RED-TEAM STEP 1B — RISK-STRATUM-SPECIFIC OVERLAP WEIGHTING
+======================================================================
+Removed PS term(s): stage_f
+Primary low-risk anchor remains bottom predicted-risk decile.
+risk<5% remains supportive.
+
+== CANCER-SPECIFIC MORTALITY ==
+Q1              RD -0.2 pp (95% CI -3.6 to +2.8; B=1000) | upper reduction 3.6 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET
+Q2              RD -3.6 pp (95% CI -8.0 to +1.3; B=1000)
+Q3              RD -0.2 pp (95% CI -7.0 to +3.8; B=1000)
+Q4              RD -4.4 pp (95% CI -8.5 to +2.6; B=1000)
+Q5              RD -5.1 pp (95% CI -12.1 to +1.3; B=1000)
+bottom_decile   RD +2.1 pp (95% CI -2.8 to +6.1; B=1000) | upper reduction 2.8 pp | 2pp:NOT MET 3pp:MET 5pp:MET
+risk_lt_5pct    RD +2.9 pp (95% CI -3.2 to +7.4; B=1000) | upper reduction 3.2 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET
+
+== OTHER-CAUSE MORTALITY RESIDUAL-SELECTION DIAGNOSTIC ==
+Q1              RD -4.7 pp (95% CI -7.3 to +0.1; B=1000)
+Q2              RD -2.1 pp (95% CI -6.6 to +1.3; B=1000)
+Q3              RD -3.1 pp (95% CI -8.9 to +0.1; B=1000)
+Q4              RD -4.9 pp (95% CI -8.9 to -0.7; B=1000)
+Q5              RD -0.7 pp (95% CI -3.8 to +3.5; B=1000)
+bottom_decile   RD -1.5 pp (95% CI -7.1 to +3.6; B=1000)
+risk_lt_5pct    RD +0.6 pp (95% CI -7.0 to +4.4; B=1000)
+
+== SUBGROUP-SPECIFIC BALANCE / SUPPORT ==
+Q1              n=1382 (712/670) events=31/30 | CSM CIF 6.0/5.8% RD -0.2 | ESS 674.9/646.6 | max weight 0.835 | max|SMD| 0.001 [nodal_risk] | PASS
+Q2              n=1381 (634/747) events=49/48 | CSM CIF 12.1/8.5% RD -3.6 | ESS 591.2/700.5 | max weight 0.816 | max|SMD| 0.000 [nodal_risk] | PASS
+Q3              n=1381 (576/805) events=59/83 | CSM CIF 13.9/13.7% RD -0.2 | ESS 533.5/731.2 | max weight 0.873 | max|SMD| 0.003 [nodal_risk] | PASS
+Q4              n=1381 (501/880) events=98/141 | CSM CIF 24.6/20.1% RD -4.4 | ESS 483.9/819.0 | max weight 0.873 | max|SMD| 0.004 [nodal_risk] | PASS
+Q5              n=1381 (436/945) events=140/269 | CSM CIF 39.2/34.1% RD -5.1 | ESS 427.7/889.9 | max weight 0.845 | max|SMD| 0.001 [nodal_risk] | PASS
+bottom_decile   n=691 (378/313) events=11/16 | CSM CIF 4.2/6.3% RD +2.1 | ESS 351.3/301.5 | max weight 0.864 | max|SMD| 0.012 [nodal_risk] | PASS
+risk_lt_5pct    n=597 (334/263) events=9/16 | CSM CIF 4.3/7.3% RD +2.9 | ESS 308.3/251.2 | max weight 0.856 | max|SMD| 0.013 [nodal_risk] | PASS
+
+== CHANGE VS STEP 1A GLOBAL NO-STAGE OW ==
+Q1              global +0.34 pp | subgroup-OW -0.17 pp | change -0.51 pp
+Q2              global -3.50 pp | subgroup-OW -3.60 pp | change -0.11 pp
+Q3              global -0.21 pp | subgroup-OW -0.20 pp | change +0.01 pp
+Q4              global -4.57 pp | subgroup-OW -4.43 pp | change +0.14 pp
+Q5              global -6.01 pp | subgroup-OW -5.07 pp | change +0.95 pp
+bottom_decile   global +3.11 pp | subgroup-OW +2.05 pp | change -1.05 pp
+risk_lt_5pct    global +4.26 pp | subgroup-OW +2.93 pp | change -1.33 pp
+
+== DECISION RULE ==
+If bottom-decile subgroup-specific weighting preserves balance and the 3-pp criterion, the core low-risk conclusion survives the strongest current exchangeability challenge.
+If the bottom-decile 3-pp criterion is lost, the manuscript's result-convincingness score must be downgraded and the headline reframed.
+======================================================================

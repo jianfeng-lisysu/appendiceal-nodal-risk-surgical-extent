@@ -1,0 +1,13 @@
+== STEP 04 FINAL: 5-year cancer-specific mortality RD (effective B=1000) ==
+RD = oncologic colectomy - limited resection; RD < 0 favors oncologic colectomy.
+Quintile/P10 cut points are re-estimated within every bootstrap replicate; risk<5% remains fixed.
+Q1             : +0.3 pp (95% CI -3.4 to +3.0)
+Q2             : -3.6 pp (95% CI -7.8 to +1.6)
+Q3             : -0.7 pp (95% CI -7.4 to +3.8)
+Q4             : -5.1 pp (95% CI -9.6 to +2.1)
+Q5             : -6.0 pp (95% CI -12.7 to +0.5)
+bottom_decile  : +3.1 pp (95% CI -2.2 to +7.0)
+risk_lt_5pct   : +4.2 pp (95% CI -2.0 to +7.8)
+Q5-Q1 contrast: -6.3 pp (95% CI -13.5 to +1.6)
+3-pp criterion: Q1 upper 3.4 [NOT MET] | bottom-decile upper 2.2 [MET] | risk<5% upper 2.0 [MET]
+Q5 cancer-specific mortality RR = 0.847 (95% bootstrap CI 0.714 to 1.015); E-value(point)=1.64; E-value(CI-limit)=1.00

@@ -1,0 +1,62 @@
+======================================================================
+A6 RED-TEAM STEP 3 — FOLLOW-UP SUPPORT / <=2017 SENSITIVITY
+======================================================================
+Frozen cohort N = 6951
+Outcome-evaluable N = 6906 | excluded from outcome analysis = 45
+Removed PS term(s): stage_f
+Primary low-risk anchor remains bottom predicted-risk decile.
+risk<5% remains supportive.
+
+== REVERSE-KM FOLLOW-UP ==
+Overall                      n=6906 | median 79.0 months (95% CI 76.0 to 82.0)
+Limited resection            n=2859 | median 71.0 months (95% CI 66.0 to 75.0)
+Oncologic colectomy          n=4047 | median 84.0 months (95% CI 80.0 to 88.0)
+Era 2004-2009                n=1178 | median 199.0 months (95% CI 196.0 to 202.0)
+Era 2010-2017                n=2721 | median 112.0 months (95% CI 110.0 to 115.0)
+Era 2018-2023                n=3007 | median 27.0 months (95% CI 25.0 to 28.0)
+Diagnosis <=2017             n=3899 | median 132.0 months (95% CI 129.0 to 135.0)
+Diagnosis 2018-2023          n=3007 | median 27.0 months (95% CI 25.0 to 28.0)
+
+== UNWEIGHTED NUMBERS AT RISK ==
+Overall | 12m=5800 | 36m=4150 | 60m=3068
+Limited resection | 12m=2253 | 36m=1538 | 60m=1121
+Oncologic colectomy | 12m=3547 | 36m=2612 | 60m=1947
+Bottom predicted-risk decile | 12m=593 | 36m=437 | 60m=338
+Predicted nodal risk <5% | 12m=514 | 36m=380 | 60m=296
+
+== 5-YEAR STATUS SUPPORT ==
+Overall: n=6906 | death before 60m=1409 | followed >=60m=3068 | censored alive <60m=2429 | 5y status resolved 64.8%
+2004-2009  n=1178 | censored alive <60m=11 | 5y status resolved 99.1%
+2010-2017  n=2721 | censored alive <60m=53 | 5y status resolved 98.1%
+2018-2023  n=3007 | censored alive <60m=2365 | 5y status resolved 21.4%
+
+Calendar-eligible sensitivity uses diagnosis year <=2017, conservatively ensuring at least 5 years of potential administrative follow-up through 2023.
+<=2017 raw N = 3938 | outcome-evaluable N = 3899
+
+== <=2017 CORRECTED FULL-PIPELINE B=1000 ==
+Q1              RD -0.9 pp (95% CI -4.6 to +3.4; B=1000) | upper reduction 4.6 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full -0.70 pp
+Q2              RD -2.7 pp (95% CI -8.8 to +2.9; B=1000) | change vs full +0.95 pp
+Q3              RD -1.7 pp (95% CI -8.4 to +4.9; B=1000) | change vs full -1.47 pp
+Q4              RD -3.3 pp (95% CI -9.8 to +5.7; B=1000) | change vs full +1.09 pp
+Q5              RD -3.7 pp (95% CI -12.5 to +3.1; B=1000) | change vs full +1.39 pp
+bottom_decile   RD +2.6 pp (95% CI -3.5 to +7.4; B=999) | upper reduction 3.5 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full +0.51 pp
+risk_lt_5pct    RD +2.6 pp (95% CI -4.0 to +8.0; B=1000) | upper reduction 4.0 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full -0.35 pp
+
+== <=2017 BALANCE / SUPPORT ==
+Q1              n=780 (397/383) events=21/19 | CIF 5.9/5.0% RD -0.9 | ESS 368.8/369.0 | max weight 0.903 | max|SMD| 0.009 [nodal_risk] | PASS
+Q2              n=780 (335/445) events=50/50 | CIF 15.2/12.5% RD -2.7 | ESS 320.4/413.6 | max weight 0.859 | max|SMD| 0.001 [nodal_risk] | PASS
+Q3              n=779 (269/510) events=51/82 | CIF 17.8/16.1% RD -1.7 | ESS 259.4/464.5 | max weight 0.793 | max|SMD| 0.000 [nodal_risk] | PASS
+Q4              n=780 (258/522) events=65/111 | CIF 25.4/22.1% RD -3.3 | ESS 251.7/484.4 | max weight 0.859 | max|SMD| 0.005 [nodal_risk] | PASS
+Q5              n=780 (242/538) events=98/192 | CIF 40.1/36.4% RD -3.7 | ESS 239.6/513.6 | max weight 0.844 | max|SMD| 0.005 [nodal_risk] | PASS
+bottom_decile   n=390 (200/190) events=8/15 | CIF 5.0/7.5% RD +2.6 | ESS 180.7/178.4 | max weight 0.809 | max|SMD| 0.022 [nodal_risk] | PASS
+risk_lt_5pct    n=393 (202/191) events=8/15 | CIF 4.8/7.4% RD +2.6 | ESS 183.4/179.8 | max weight 0.815 | max|SMD| 0.024 [nodal_risk] | PASS
+
+== DECISION / SCORE CHECK ==
+No >2-pp bottom-decile point-estimate shift versus the full corrected cohort.
+<=2017 bottom-decile 3-pp criterion: NOT MET | upper compatible reduction 3.49 pp.
+<=2017 risk<5% 3-pp criterion: NOT MET | upper compatible reduction 3.99 pp.
+
+Interpretation rule:
+The <=2017 analysis is a calendar-eligibility / follow-up-support sensitivity analysis. Wider confidence intervals caused by the smaller historical cohort are not, by themselves, evidence that the main result is invalid.
+The key robustness question is whether the low-risk point estimate materially changes direction/magnitude when late-diagnosis patients are removed, while within-stratum balance remains acceptable.
+======================================================================

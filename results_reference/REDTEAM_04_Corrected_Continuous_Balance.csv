@@ -1,0 +1,8 @@
+"analysis","n","limited","colectomy","max_abs_weighted_SMD","worst_variable","balance_pass"
+"Q1",1391,714,677,0.000516356251206833,"nodal_risk",TRUE
+"Q2",1390,638,752,0.000529888586343499,"nodal_risk",TRUE
+"Q3",1390,578,812,0.00331023692474237,"nodal_risk",TRUE
+"Q4",1390,506,884,0.00394748429596434,"nodal_risk",TRUE
+"Q5",1390,441,949,0.00115702208428812,"nodal_risk",TRUE
+"bottom_decile_under_quintile_weights",696,379,317,0.133570753499897,"I(age^2)",FALSE
+"risk_lt_5pct_under_quintile_weights",601,335,266,0.188513128667692,"I(age^2)",FALSE

@@ -1,0 +1,37 @@
+======================================================================
+A6 RED-TEAM STEP 2B — MI + BOOTSTRAP-WITHIN-IMPUTATION + RUBIN POOLING
+======================================================================
+m = 20
+bootstrap per imputation = 1000
+total planned bootstrap replicates = 20000
+logsize transformation = log1p | reproduction error = 0e+00
+Summary Stage excluded from PS.
+PS refitted separately within each predicted-risk stratum.
+Bottom decile remains the primary low-risk anchor; risk<5% remains supportive.
+
+== RUBIN-POOLED CANCER-SPECIFIC MORTALITY RD ==
+Q1              RD -0.95 pp (95% CI -4.41 to +2.51) | SE 1.76 pp | df 799.7 | m=20 | mean/min boot B 1000.0/1000 | upper reduction 4.41 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs Step1B -0.78 pp
+Q2              RD -2.73 pp (95% CI -7.66 to +2.20) | SE 2.51 pp | df 899.5 | m=20 | mean/min boot B 1000.0/1000 | change vs Step1B +0.88 pp
+Q3              RD -0.90 pp (95% CI -6.63 to +4.82) | SE 2.92 pp | df 872.4 | m=20 | mean/min boot B 1000.0/1000 | change vs Step1B -0.70 pp
+Q4              RD -3.43 pp (95% CI -9.85 to +2.99) | SE 3.27 pp | df 577.5 | m=20 | mean/min boot B 1000.0/1000 | change vs Step1B +1.00 pp
+Q5              RD -5.41 pp (95% CI -12.06 to +1.24) | SE 3.39 pp | df 1701.4 | m=20 | mean/min boot B 1000.0/1000 | change vs Step1B -0.34 pp
+bottom_decile   RD +1.44 pp (95% CI -3.11 to +6.00) | SE 2.32 pp | df 3443.3 | m=20 | mean/min boot B 1000.0/1000 | upper reduction 3.11 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs Step1B -0.61 pp
+risk_lt_5pct    RD +1.75 pp (95% CI -3.17 to +6.66) | SE 2.51 pp | df 2355.7 | m=20 | mean/min boot B 1000.0/1000 | upper reduction 3.17 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs Step1B -1.18 pp
+
+== PRIMARY DECISION ==
+SCORE DOWNGRADE REQUIRED: bottom-decile MI-pooled 95% CI no longer excludes a 3-pp colectomy-associated reduction. Pooled RD +1.44 pp (95% CI -3.11 to +6.00); upper compatible reduction 3.11 pp.
+
+== SUPPORTIVE <5% THRESHOLD ==
+risk<5% 3-pp criterion: NOT MET | upper compatible reduction 3.17 pp.
+
+== PROTOCOL CHECK ==
+No >2-pp Q5 protocol trigger.
+
+== MONTE CARLO CHECK ==
+FINAL MONTE CARLO CONFIRMATION COMPLETED at B=1000 per imputation. Do not rerun with a larger B based on whether the 3-pp criterion is met. Lock the conclusion from this run.
+
+Interpretation:
+RD = oncologic colectomy minus limited resection in 5-year cancer-specific mortality.
+Negative values indicate lower cancer-specific mortality associated with colectomy.
+The primary 3-pp bounding claim is met only when the lower 95% confidence limit is greater than -3.0 pp.
+======================================================================

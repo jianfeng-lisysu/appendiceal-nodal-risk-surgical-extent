@@ -1,0 +1,22 @@
+======================================================================
+A6 FINAL PRESUBMISSION STEP 07 v2 — AUDIT
+======================================================================
+Script version: A6_PRESUB07_v2_1_20260906_SYNTAXFIX
+Run time: 2026-09-06 22:25:28
+ROOT: /Users/fengye/Desktop/Scientific Research/A6
+R version: R version 4.5.2 (2025-10-31)
+Step-1B fingerprint gate: PASS; max |diff| = 2.554e-15
+Removed Summary-Stage term(s): stage_f
+Histology term(s) additionally removed in histology subgroup PS: hist_f
+Landmark risk definition: baseline/full outcome-evaluable bootstrap-sample quintiles and P10 are defined BEFORE landmark restriction.
+Landmark 0.05 threshold: fixed.
+Landmark horizon: conditional on surviving beyond L; outcome horizon remains 60 months post diagnosis.
+Histology risk-half definition: overall median predicted nodal risk in the full risk-scored analytic cohort, before outcome filtering.
+B=1000; estimable-result minimum effective B=900.
+Decision-bound sensitivity: 2/3/5 percentage points; 3 pp remains the prespecified primary clinical decision bound.
+======================================================================
+
+Landmark seeds: 3m=20260906; 6m=20260909; 12m=20260915.
+Histology seed: 20260904.
+Checkpoint interval: every 50 replicates.
+Do not rerun at a larger B because of favorable/unfavorable decision-bound results.

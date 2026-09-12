@@ -1,0 +1,37 @@
+== STEP 06 S1: colectomy arm restricted to LN>=12 (input n=6130; effective B=500) ==
+  Q1: -0.6 pp (95% CI -4.0 to +2.7)
+  Q2: -5.0 pp (95% CI -9.3 to -0.2)
+  Q3: -1.5 pp (95% CI -7.9 to +3.2)
+  Q4: -6.6 pp (95% CI -10.7 to +1.2)
+  Q5: -7.0 pp (95% CI -13.7 to -0.1)
+
+== Negative control / histology x risk half / era x risk half ==
+  negative_control_Q1           : -4.0 pp (95% CI -6.6 to +0.8; B=1000)
+  negative_control_Q2           : -2.7 pp (95% CI -7.5 to +0.8; B=1000)
+  negative_control_Q3           : -3.0 pp (95% CI -8.7 to -0.1; B=1000)
+  negative_control_Q4           : -5.4 pp (95% CI -9.6 to -1.2; B=1000)
+  negative_control_Q5           : -0.7 pp (95% CI -4.5 to +3.4; B=1000)
+  nonmucinous_low               : -4.5 pp (95% CI -10.8 to +1.0; B=1000)
+  nonmucinous_high              : -9.2 pp (95% CI -14.7 to -3.4; B=1000)
+  mucinous_low                  : -0.8 pp (95% CI -6.0 to +4.1; B=1000)
+  mucinous_high                 : -1.3 pp (95% CI -8.7 to +5.9; B=1000)
+  GCA_low                       : -1.3 pp (95% CI -4.1 to +1.4; B=1000)
+  GCA_high                      : +1.9 pp (95% CI -4.3 to +8.6; B=1000)
+  SRCC_low                      : insufficient data/bootstrap
+  SRCC_high                     : -2.2 pp (95% CI -14.7 to +10.4; B=1000)
+  2004-2009_low                 : -0.3 pp (95% CI -7.8 to +6.2; B=1000)
+  2004-2009_high                : -4.6 pp (95% CI -11.8 to +3.0; B=1000)
+  2010-2017_low                 : -2.0 pp (95% CI -5.0 to +1.7; B=1000)
+  2010-2017_high                : -4.0 pp (95% CI -9.6 to +1.3; B=1000)
+  2018-2023_low                 : -1.1 pp (95% CI -4.6 to +1.8; B=1000)
+  2018-2023_high                : -5.2 pp (95% CI -12.7 to +2.9; B=1000)
+
+== Histology x risk-half weighted balance audit (18 components) ==
+  nonmucinous_low: n=767 | max|SMD|=0.170 | components >0.10=7 | worst=nodal_risk; size_missing; year; grade=1; T=T4
+  nonmucinous_high: n=1522 | max|SMD|=0.160 | components >0.10=3 | worst=age; grade=4; year; grade=3; size_missing
+  mucinous_low: n=1171 | max|SMD|=0.374 | components >0.10=9 | worst=year; grade=2; T=T2; size_mm(imp); grade=1
+  mucinous_high: n=923 | max|SMD|=0.160 | components >0.10=4 | worst=year; grade=0; T=T2; Regional; female
+  GCA_low: n=1520 | max|SMD|=0.225 | components >0.10=6 | worst=year; size_mm(imp); T=T3; grade=2; age
+  GCA_high: n=758 | max|SMD|=0.161 | components >0.10=2 | worst=grade=2; grade=3; Regional; grade=0; age
+
+NOTE: Alternative surgery-definition sensitivity analyses are intentionally not rerun here because the frozen N=6,951 cohort cannot reintroduce surgery-code groups excluded before E7. These must be reproduced from the pre-E7/original SEER source if required for the final reproducibility package.

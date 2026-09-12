@@ -1,0 +1,31 @@
+N=6951 | colectomy 4074 vs limited 2877
+PS: col P1 0.320 P99 0.814 | lim P1 0.253 P99 0.797
+ESS: colectomy 3780 | limited 2735 | max weight 0.876
+
+== SMD 加权前 -> 加权后 ==
+age           : -0.025 -> +0.000
+female        : -0.062 -> +0.000
+year          : -0.176 -> +0.000
+size_mm(imp)  : +0.105 -> -0.005
+size_missing  : -0.059 -> -0.000
+T=T2          : -0.049 -> -0.000
+T=T3          : +0.084 -> +0.000
+T=T4          : +0.039 -> +0.000
+grade=1       : -0.145 -> +0.000
+grade=2       : +0.119 -> +0.000
+grade=3       : +0.143 -> -0.000
+grade=4       : +0.031 -> -0.000
+grade=0       : -0.121 -> -0.000
+hist=mucinous : -0.193 -> -0.000
+hist=GCA      : +0.021 -> -0.000
+hist=SRCC     : +0.106 -> +0.000
+Regional      : +0.159 -> +0.000
+nodal_risk    : +0.270 -> -0.002
+加权后|SMD|>0.1的变量数: 0
+
+== 风险五分位positivity ==
+Q1: colectomy  677 | limited  714 | PS 0.26-0.66
+Q2: colectomy  752 | limited  638 | PS 0.32-0.72
+Q3: colectomy  812 | limited  578 | PS 0.35-0.76
+Q4: colectomy  884 | limited  506 | PS 0.37-0.79
+Q5: colectomy  949 | limited  441 | PS 0.47-0.83

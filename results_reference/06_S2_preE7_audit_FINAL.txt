@@ -1,0 +1,26 @@
+== STEP 06 S2 PRE-E7 SOURCE RECONSTRUCTION AUDIT ==
+Original source: E:/Scientific Research/A6/02_data/SEER_appendix_malignant_2000_2023.txt
+
+Frozen exclusion-flow reconstruction:
+E0: 24632
+E1: 23021
+E2: 13972
+E3: 13877
+E4: 13868
+E5: 8223
+E6: 7689
+
+Main surgical definition reconstructed N=6951 (limited=2877; colectomy=4074).
+Patient-ID informational check: set match=FALSE; order match=FALSE.
+24-field analytic-content multiset match: TRUE.
+Year x exposure x histology crosstab match: TRUE.
+Main RD point fingerprint (pp): Q1=+0.28 | Q2=-3.65 | Q3=-0.72 | Q4=-5.10 | Q5=-6.01
+
+Alternative surgery population sizes:
+S2-A 20-39 vs 40-79: N=7450
+S2-B exclude code32: N=6676
+S2-C colectomy 40-79: N=7115
+
+Harmonization fixes used:
+1. Derived SEER Combined T (2016-2017) included.
+2. 2023 alphanumeric surgery codes decoded (e.g., A300 -> 30).

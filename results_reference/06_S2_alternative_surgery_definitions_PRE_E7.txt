@@ -1,0 +1,13 @@
+A6 — Alternative surgery-definition sensitivity
+============================================================
+
+STATUS: PRE-E7 SOURCE RESULT; retain for reproducibility.
+
+Extracted from legacy 06_sensitivity_report.txt on 2026-08-24 21:22:57
+
+Important: these analyses cannot be reconstructed from the frozen N=6,951 cohort because alternative surgery-code groups were excluded before E7. They must ultimately be reproduced from the pre-E7/original SEER source.
+
+== S2 备选手术定义(点估计; 主定义: +0.3,-3.6,-0.7,-5.1,-6.0) ==
+  20-39 vs >=40      (n=7450): Q1 -0.6 Q2 -2.6 Q3 -1.7 Q4 -3.6 Q5 -6.5
+  排除码32        (n=6676): Q1 -0.1 Q2 -3.6 Q3 -0.9 Q4 -5.2 Q5 -5.2
+  colectomy含50-79  (n=7115): Q1 -0.4 Q2 -2.3 Q3 -1.8 Q4 -3.5 Q5 -6.5

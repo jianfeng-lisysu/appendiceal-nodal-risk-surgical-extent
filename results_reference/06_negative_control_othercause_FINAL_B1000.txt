@@ -1,0 +1,19 @@
+== FINAL other-cause mortality residual-selection diagnostic ==
+RAW N=6951; bootstrap B=1000.
+RD = oncologic colectomy - limited resection in 5-year other-cause mortality.
+Negative RD indicates lower other-cause mortality associated with oncologic colectomy.
+Interpretation: qualitative residual-selection diagnostic only; not a strict no-effect negative control and no numerical bias subtraction.
+
+Q1 (lowest risk)              : limited 10.8% | colectomy 6.8% | RD -4.0 pp (95% CI -6.5 to +0.6; effective B=1000)
+Q2                            : limited 9.6% | colectomy 6.9% | RD -2.7 pp (95% CI -7.3 to +0.7; effective B=1000)
+Q3                            : limited 9.7% | colectomy 6.6% | RD -3.0 pp (95% CI -8.7 to -0.1; effective B=1000)
+Q4                            : limited 13.3% | colectomy 8.0% | RD -5.4 pp (95% CI -10.0 to -0.9; effective B=1000)
+Q5 (highest risk)             : limited 9.1% | colectomy 8.4% | RD -0.7 pp (95% CI -4.1 to +3.4; effective B=1000)
+Bottom predicted-risk decile  : limited 7.8% | colectomy 7.5% | RD -0.4 pp (95% CI -5.6 to +4.5; effective B=1000)
+Predicted nodal risk <5%      : limited 5.8% | colectomy 7.6% | RD +1.9 pp (95% CI -5.8 to +5.4; effective B=1000)
+
+Original-sample risk cut points:
+P10 = 5.37%
+Quintile boundaries = 7.97%, 13.41%, 20.49%, 32.18%
+
+Frozen pipeline fingerprints: risk=4.41e-14; PS=6.04e-13; OW=6.04e-13.

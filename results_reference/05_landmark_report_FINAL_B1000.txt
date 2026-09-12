@@ -1,0 +1,33 @@
+== STEP 05 FINAL landmark sensitivity ==
+Landmarks: 3, 6, 12 months.
+Outcome horizon remains 60 months from diagnosis; L=0 is identical to the primary analysis and is not rerun.
+
+-- Landmark 3 months (effective B=1000) --
+  Q1             : -0.1 pp (95% CI -3.6 to +2.9)
+  Q2             : -3.4 pp (95% CI -7.3 to +1.8)
+  Q3             : -0.3 pp (95% CI -7.0 to +3.1)
+  Q4             : -5.2 pp (95% CI -9.8 to +2.2)
+  Q5             : -5.7 pp (95% CI -12.2 to +1.1)
+  bottom_decile  : +2.2 pp (95% CI -2.3 to +5.8)
+  risk_lt_5pct   : +3.2 pp (95% CI -2.3 to +6.7)
+  Low-risk colectomy-advantage upper bounds: bottom decile 2.3 pp [MET] | risk<5% 2.3 pp [MET]
+
+-- Landmark 6 months (effective B=1000) --
+  Q1             : -0.5 pp (95% CI -3.7 to +2.4)
+  Q2             : -3.9 pp (95% CI -8.1 to +1.2)
+  Q3             : -0.3 pp (95% CI -7.4 to +3.6)
+  Q4             : -5.3 pp (95% CI -10.1 to +2.4)
+  Q5             : -5.0 pp (95% CI -12.3 to +1.7)
+  bottom_decile  : +2.1 pp (95% CI -2.3 to +5.5)
+  risk_lt_5pct   : +3.1 pp (95% CI -2.5 to +6.6)
+  Low-risk colectomy-advantage upper bounds: bottom decile 2.3 pp [MET] | risk<5% 2.5 pp [MET]
+
+-- Landmark 12 months (effective B=1000) --
+  Q1             : -0.4 pp (95% CI -3.7 to +2.2)
+  Q2             : -3.9 pp (95% CI -7.7 to +1.4)
+  Q3             : +0.6 pp (95% CI -6.1 to +4.1)
+  Q4             : -2.9 pp (95% CI -7.3 to +4.1)
+  Q5             : -4.9 pp (95% CI -12.0 to +2.0)
+  bottom_decile  : +1.9 pp (95% CI -2.7 to +5.3)
+  risk_lt_5pct   : +2.8 pp (95% CI -2.5 to +6.5)
+  Low-risk colectomy-advantage upper bounds: bottom decile 2.7 pp [MET] | risk<5% 2.5 pp [MET]

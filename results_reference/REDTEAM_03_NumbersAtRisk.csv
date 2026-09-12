@@ -1,0 +1,16 @@
+"group","time_months","n_risk"
+"Overall",12,5800
+"Overall",36,4150
+"Overall",60,3068
+"Limited resection",12,2253
+"Limited resection",36,1538
+"Limited resection",60,1121
+"Oncologic colectomy",12,3547
+"Oncologic colectomy",36,2612
+"Oncologic colectomy",60,1947
+"Bottom predicted-risk decile",12,593
+"Bottom predicted-risk decile",36,437
+"Bottom predicted-risk decile",60,338
+"Predicted nodal risk <5%",12,514
+"Predicted nodal risk <5%",36,380
+"Predicted nodal risk <5%",60,296

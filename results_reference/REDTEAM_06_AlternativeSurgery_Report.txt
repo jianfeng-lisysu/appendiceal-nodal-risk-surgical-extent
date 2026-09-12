@@ -1,0 +1,43 @@
+======================================================================
+A6 RED-TEAM STEP 6 — ALTERNATIVE SURGERY DEFINITIONS, CORRECTED B=1000
+======================================================================
+RD = oncologic colectomy - limited resection.
+RD < 0 indicates lower 5-year cancer-specific mortality associated with colectomy.
+
+Patient-ID membership PASS: FALSE | row-order PASS: FALSE (row order is not a cohort criterion)
+Removed PS term(s): stage_f
+
+-- limited 20-39 vs colectomy 40-79 | cohort N=7450 --
+  Q1              RD -0.93 pp (95% CI -3.41 to +2.83; B=1000) | CIF 6.38% vs 5.45% | max|SMD| 0.004 [PASS] | upper compatible colectomy reduction 3.41 pp | 3-pp criterion: NOT MET
+  Q2              RD -2.19 pp (95% CI -7.64 to +1.68; B=1000) | CIF 11.85% vs 9.66% | max|SMD| 0.002 [PASS]
+  Q3              RD -0.52 pp (95% CI -5.93 to +4.62; B=1000) | CIF 14.34% vs 13.82% | max|SMD| 0.004 [PASS]
+  Q4              RD -2.99 pp (95% CI -9.11 to +2.60; B=1000) | CIF 24.11% vs 21.13% | max|SMD| 0.003 [PASS]
+  Q5              RD -5.99 pp (95% CI -11.87 to -0.17; B=1000) | CIF 39.23% vs 33.24% | max|SMD| 0.001 [PASS]
+  bottom_decile   RD +3.43 pp (95% CI -2.55 to +7.01; B=1000) | CIF 3.78% vs 7.21% | max|SMD| 0.009 [PASS] | upper compatible colectomy reduction 2.55 pp | 3-pp criterion: MET
+  risk_lt_5pct    RD +3.67 pp (95% CI -3.18 to +8.04; B=1000) | CIF 4.14% vs 7.81% | max|SMD| 0.022 [PASS] | upper compatible colectomy reduction 3.18 pp | 3-pp criterion: NOT MET
+
+-- limited 30-31 vs colectomy 40-41 | cohort N=6676 --
+  Q1              RD -0.38 pp (95% CI -4.00 to +2.79; B=1000) | CIF 6.14% vs 5.75% | max|SMD| 0.001 [PASS] | upper compatible colectomy reduction 4.00 pp | 3-pp criterion: NOT MET
+  Q2              RD -3.23 pp (95% CI -7.58 to +1.85; B=1000) | CIF 11.84% vs 8.62% | max|SMD| 0.000 [PASS]
+  Q3              RD -0.86 pp (95% CI -6.28 to +3.89; B=1000) | CIF 14.03% vs 13.17% | max|SMD| 0.002 [PASS]
+  Q4              RD -3.23 pp (95% CI -8.60 to +3.20; B=1000) | CIF 23.38% vs 20.15% | max|SMD| 0.003 [PASS]
+  Q5              RD -4.14 pp (95% CI -11.31 to +1.74; B=1000) | CIF 38.79% vs 34.65% | max|SMD| 0.001 [PASS]
+  bottom_decile   RD +2.23 pp (95% CI -2.89 to +5.98; B=1000) | CIF 4.16% vs 6.39% | max|SMD| 0.012 [PASS] | upper compatible colectomy reduction 2.89 pp | 3-pp criterion: MET
+  risk_lt_5pct    RD +3.16 pp (95% CI -3.21 to +6.39; B=1000) | CIF 4.17% vs 7.33% | max|SMD| 0.013 [PASS] | upper compatible colectomy reduction 3.21 pp | 3-pp criterion: NOT MET
+
+-- limited 30-32 vs colectomy 40-79 | cohort N=7115 --
+  Q1              RD -0.16 pp (95% CI -3.37 to +3.08; B=1000) | CIF 6.00% vs 5.85% | max|SMD| 0.000 [PASS] | upper compatible colectomy reduction 3.37 pp | 3-pp criterion: NOT MET
+  Q2              RD -2.34 pp (95% CI -7.46 to +1.90; B=1000) | CIF 11.48% vs 9.14% | max|SMD| 0.000 [PASS]
+  Q3              RD -0.82 pp (95% CI -5.86 to +4.56; B=1000) | CIF 15.20% vs 14.38% | max|SMD| 0.008 [PASS]
+  Q4              RD -2.74 pp (95% CI -9.26 to +2.39; B=1000) | CIF 23.79% vs 21.05% | max|SMD| 0.004 [PASS]
+  Q5              RD -5.88 pp (95% CI -11.57 to +1.59; B=1000) | CIF 39.53% vs 33.65% | max|SMD| 0.002 [PASS]
+  bottom_decile   RD +3.08 pp (95% CI -2.58 to +6.32; B=1000) | CIF 3.83% vs 6.91% | max|SMD| 0.008 [PASS] | upper compatible colectomy reduction 2.58 pp | 3-pp criterion: MET
+  risk_lt_5pct    RD +3.06 pp (95% CI -2.77 to +7.36; B=1000) | CIF 4.82% vs 7.89% | max|SMD| 0.023 [PASS] | upper compatible colectomy reduction 2.77 pp | 3-pp criterion: MET
+
+Interpretation:
+These sensitivity analyses change only the operational surgery-code definition.
+They preserve the corrected Step 1B framework and the frozen 5-year competing-risk estimand.
+
+IMPORTANT:
+Do not use the temporary +4.18/+4.67 pp event-proportion results in manuscript text or figures.
+======================================================================

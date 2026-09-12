@@ -1,0 +1,30 @@
+======================================================================
+A6 RED-TEAM STEP 6 — CORRECTED ALTERNATIVE SURGERY DEFINITIONS
+======================================================================
+Script version: A6_REDTEAM06_CORRECTED_FROZEN_20260906_v4_E2FIX
+Original source: E:/Scientific Research/A6/02_data/SEER_appendix_malignant_2000_2023.txt
+Frozen analytic cohort: E:/Scientific Research/A6/02_data/analytic_cohort_A.csv
+Frozen pipeline: E:/Scientific Research/A6/02_data/Aline_frozen_pipeline_v2.RData
+
+Main N PASS: TRUE
+Main arm-count PASS: TRUE
+24-field analytic-content PASS: TRUE
+Year/exposure/histology crosstab PASS: TRUE
+Main patient-ID membership PASS (diagnostic): FALSE
+Main patient-ID row-order PASS: FALSE (informational only)
+Removed PS term(s): stage_f
+Corrected Step 1B fingerprint max difference: 0.000 pp
+
+Alternative A N=7450
+Alternative B N=6676
+Alternative C N=7115
+
+Framework:
+- Summary Stage excluded from PS.
+- PS/OW refitted separately within every predicted-risk stratum.
+- Nodal-risk model re-estimated through pipeline().
+- Quintile/bottom-decile cut points re-estimated.
+- 5-year cancer-specific mortality uses weighted competing-risk CIF.
+- Other-cause death is the competing event.
+- Full-pipeline percentile bootstrap B=1000.
+======================================================================

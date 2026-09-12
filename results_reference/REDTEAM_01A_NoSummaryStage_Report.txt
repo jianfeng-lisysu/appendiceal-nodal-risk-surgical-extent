@@ -1,0 +1,40 @@
+======================================================================
+A6 RED-TEAM STEP 1A — REMOVE SUMMARY STAGE FROM PS
+======================================================================
+Original PS formula: treat ~ age + I(age^2) + female + year + logsize + size_miss +      T_f + grade_f + hist_f + stage_f + race4_f + income_hi +      metro + married
+Removed term(s): stage_f
+No-stage PS formula: treat ~ age + I(age^2) + female + year + logsize + size_miss +      T_f + grade_f + hist_f + race4_f + income_hi + metro + married
+
+== ORIGINAL vs NO-STAGE POINT ESTIMATES ==
+Q1              original +0.28 | no-stage +0.34 | change +0.06 pp
+Q2              original -3.65 | no-stage -3.50 | change +0.15 pp
+Q3              original -0.72 | no-stage -0.21 | change +0.51 pp
+Q4              original -5.10 | no-stage -4.57 | change +0.53 pp
+Q5              original -6.01 | no-stage -6.01 | change -0.00 pp
+bottom_decile   original +3.09 | no-stage +3.11 | change +0.02 pp
+risk_lt_5pct    original +4.24 | no-stage +4.26 | change +0.02 pp
+overall         original -2.84 | no-stage -2.58 | change +0.26 pp
+
+== NO-STAGE B=1000 ==
+Q1              RD +0.3 pp (95% CI -2.9 to +3.6), upper reduction 2.9
+Q2              RD -3.5 pp (95% CI -7.9 to +1.7), upper reduction 7.9
+Q3              RD -0.2 pp (95% CI -6.7 to +4.4), upper reduction 6.7
+Q4              RD -4.6 pp (95% CI -9.3 to +2.5), upper reduction 9.3
+Q5              RD -6.0 pp (95% CI -12.5 to +0.4), upper reduction 12.5
+bottom_decile   RD +3.1 pp (95% CI -1.4 to +6.9), upper reduction 1.4
+risk_lt_5pct    RD +4.3 pp (95% CI -1.8 to +7.6), upper reduction 1.8
+overall         RD -2.6 pp (95% CI -4.7 to -0.4), upper reduction 4.7
+
+== STRATUM DIAGNOSTICS ==
+Q1              n=1383 ( 712/ 671) events= 31/ 30 CIF=5.6/6.0 RD=+0.3 ESS=678.5/649.6 max|SMD|=0.117 [nonmuc] FAIL
+Q2              n=1383 ( 635/ 748) events= 49/ 48 CIF=12.0/8.5 RD=-3.5 ESS=611.7/720.0 max|SMD|=0.169 [grade1] FAIL
+Q3              n=1382 ( 575/ 807) events= 59/ 83 CIF=13.9/13.7 RD=-0.2 ESS=552.7/768.0 max|SMD|=0.136 [SRCC] FAIL
+Q4              n=1382 ( 502/ 880) events= 98/141 CIF=24.6/20.0 RD=-4.6 ESS=485.4/826.7 max|SMD|=0.093 [nonmuc] PASS
+Q5              n=1376 ( 435/ 941) events=140/269 CIF=39.5/33.5 RD=-6.0 ESS=427.1/882.6 max|SMD|=0.123 [SRCC] FAIL
+bottom_decile   n= 692 ( 378/ 314) events= 11/ 16 CIF=3.4/6.5 RD=+3.1 ESS=359.0/306.3 max|SMD|=0.239 [age] FAIL
+risk_lt_5pct    n= 597 ( 334/ 263) events=  9/ 16 CIF=3.2/7.5 RD=+4.3 ESS=317.3/256.6 max|SMD|=0.290 [age2] FAIL
+overall         n=6906 (2859/4047) events=377/571 CIF=18.9/16.3 RD=-2.6 ESS=2722.7/3767.0 max|SMD|=0.004 [grade1] PASS
+
+Primary low-risk anchor remains BOTTOM DECILE; <5% remains supportive.
+Do not switch the primary anchor after seeing the results.
+======================================================================

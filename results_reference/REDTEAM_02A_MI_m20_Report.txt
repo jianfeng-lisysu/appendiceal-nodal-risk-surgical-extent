@@ -1,0 +1,47 @@
+======================================================================
+A6 RED-TEAM STEP 2A — MULTIPLE IMPUTATION GATEKEEPER (m=20)
+======================================================================
+Original grade missing: 1270 / 6951
+Original tumor-size missing: 1548 / 6951
+Frozen logsize transformation reproduced as: log1p | max error=0e+00
+
+MI specification:
+  grade: multinomial logistic imputation (polyreg)
+  tumor size: predictive mean matching (pmm)
+  m=20; maxit=20
+  Summary Stage NOT used in imputation or PS.
+  Nodal ascertainment / LN count NOT used as imputation predictors.
+  Missing-indicator terms NOT used in the MI risk/PS models.
+  Treatment, overall-survival time, and overall-death indicator included as complete auxiliary predictors.
+  Cause-specific outcome variables were excluded from MI predictors because they contain missing values.
+
+== m=20 POOLED POINT ESTIMATES ==
+NOTE: min/max and between-imputation SD are NOT 95% confidence intervals.
+Q1              pooled RD -0.95 pp | between-MI SD 0.68 | range -2.07 to +0.63 | worst max|SMD| 0.017 | balance PASS | change vs Step1B -0.78 pp
+Q2              pooled RD -2.73 pp | between-MI SD 0.93 | range -4.33 to -1.43 | worst max|SMD| 0.006 | balance PASS | change vs Step1B +0.88 pp
+Q3              pooled RD -0.90 pp | between-MI SD 1.09 | range -2.78 to +1.69 | worst max|SMD| 0.004 | balance PASS | change vs Step1B -0.70 pp
+Q4              pooled RD -3.43 pp | between-MI SD 1.36 | range -5.22 to -0.69 | worst max|SMD| 0.005 | balance PASS | change vs Step1B +1.00 pp
+Q5              pooled RD -5.41 pp | between-MI SD 1.08 | range -7.62 to -3.44 | worst max|SMD| 0.003 | balance PASS | change vs Step1B -0.34 pp
+bottom_decile   pooled RD +1.44 pp | between-MI SD 0.62 | range -0.03 to +2.54 | worst max|SMD| 0.017 | balance PASS | change vs Step1B -0.61 pp
+risk_lt_5pct    pooled RD +1.75 pp | between-MI SD 0.73 | range +0.24 to +2.99 | worst max|SMD| 0.022 | balance PASS | change vs Step1B -1.18 pp
+
+== MODEL PERFORMANCE ACROSS IMPUTATIONS ==
+dev_n                    mean 3252.0000 | SD 0.0000 | range 3252.0000 to 3252.0000
+dev_pos                  mean 738.0000 | SD 0.0000 | range 738.0000 to 738.0000
+dev_auc                  mean 0.7332 | SD 0.0028 | range 0.7274 to 0.7389
+dev_brier                mean 0.1519 | SD 0.0005 | range 0.1509 to 0.1531
+transport12_n            mean 879.0000 | SD 0.0000 | range 879.0000 to 879.0000
+transport12_pos          mean 190.0000 | SD 0.0000 | range 190.0000 to 190.0000
+transport12_auc          mean 0.7394 | SD 0.0035 | range 0.7316 to 0.7434
+transport12_brier        mean 0.1468 | SD 0.0006 | range 0.1455 to 0.1478
+transport12_slope        mean 0.9798 | SD 0.0239 | range 0.9292 to 1.0270
+transport12_pred         mean 0.2225 | SD 0.0010 | range 0.2200 to 0.2243
+transport12_obs          mean 0.2162 | SD 0.0000 | range 0.2162 to 0.2162
+
+== SCORE / PROTOCOL ALERT ==
+NO IMMEDIATE POINT-ESTIMATE DOWNGRADE
+
+Interpretation rule:
+STEP 2A is only the point-estimate gatekeeper. The prespecified 3-pp criterion CANNOT be finally judged from this file because valid MI-pooled 95% uncertainty has not yet been calculated.
+If Step 2A is acceptable, run Step 2B for bootstrap-within-imputation + Rubin-pooled uncertainty.
+======================================================================

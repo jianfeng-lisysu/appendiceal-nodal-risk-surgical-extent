@@ -1,0 +1,4 @@
+           definition    RD_pp   CI_low  CI_high bootstrap_n
+2.5%...1 Definition_A 4.180903 1.912607 6.639753        1000
+2.5%...2 Definition_B 4.666250 2.262833 7.178143        1000
+2.5%...3 Definition_C 4.180903 1.919562 6.651685        1000

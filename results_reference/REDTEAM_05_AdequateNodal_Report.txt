@@ -1,0 +1,41 @@
+======================================================================
+A6 RED-TEAM STEP 5 — ADEQUATE NODAL-ASSESSMENT SENSITIVITY
+======================================================================
+Frozen full cohort N = 6951
+Sensitivity cohort N = 6130 (expected 6130)
+Outcome-evaluable sensitivity N = 6091
+Removed PS term(s): stage_f
+Limited-resection arm retained without LN-count restriction.
+Oncologic-colectomy arm restricted to >=12 examined nodes.
+PS/OW refitted separately within each predicted-risk stratum.
+Bottom decile remains primary low-risk anchor; risk<5% remains supportive.
+
+== CORRECTED ADEQUATE-NODAL B=1000 ==
+Q1              RD -1.09 pp (95% CI -4.39 to +2.23; B=1000) | upper reduction 4.39 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full -0.92 pp | max|SMD| 0.008 [nodal_risk] PASS
+Q2              RD -5.23 pp (95% CI -8.87 to -0.09; B=1000) | change vs full -1.62 pp | max|SMD| 0.002 [nodal_risk] PASS
+Q3              RD -0.99 pp (95% CI -8.01 to +3.18; B=1000) | change vs full -0.78 pp | max|SMD| 0.003 [nodal_risk] PASS
+Q4              RD -5.85 pp (95% CI -11.01 to +2.16; B=1000) | change vs full -1.42 pp | max|SMD| 0.004 [nodal_risk] PASS
+Q5              RD -6.43 pp (95% CI -12.89 to +0.22; B=1000) | change vs full -1.36 pp | max|SMD| 0.001 [nodal_risk] PASS
+bottom_decile   RD +1.21 pp (95% CI -4.06 to +5.50; B=1000) | upper reduction 4.06 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full -0.84 pp | max|SMD| 0.016 [nodal_risk] PASS
+risk_lt_5pct    RD +2.00 pp (95% CI -4.12 to +6.12; B=1000) | upper reduction 4.12 pp | 2pp:NOT MET 3pp:NOT MET 5pp:MET | change vs full -0.93 pp | max|SMD| 0.011 [nodal_risk] PASS
+
+== SUPPORT / EVENTS ==
+Q1              n=1219 (700/519) | cancer events=30/18 | CIF 5.72/4.63% | ESS 651.4/501.3
+Q2              n=1218 (633/585) | cancer events=50/29 | CIF 12.02/6.80% | ESS 571.8/545.2
+Q3              n=1218 (587/631) | cancer events=59/57 | CIF 12.97/11.99% | ESS 532.1/580.5
+Q4              n=1218 (503/715) | cancer events=98/102 | CIF 24.25/18.40% | ESS 477.6/665.3
+Q5              n=1218 (436/782) | cancer events=140/210 | CIF 39.02/32.59% | ESS 424.2/738.2
+bottom_decile   n=610 (363/247) | cancer events=11/11 | CIF 4.38/5.59% | ESS 326.8/235.4
+risk_lt_5pct    n=546 (334/212) | cancer events=9/11 | CIF 4.20/6.20% | ESS 302.1/202.1
+
+== RED-TEAM / SCORE CHECK ==
+PASS: all seven risk strata have max|SMD| <0.10; worst = 0.016.
+No >2-pp point-estimate shift versus the full corrected cohort; maximum absolute change = 1.62 pp.
+Bottom-decile 3-pp criterion: NOT MET | upper compatible reduction 4.06 pp.
+risk<5% 3-pp criterion: NOT MET | upper compatible reduction 4.12 pp.
+
+Interpretation:
+This is a sensitivity analysis addressing adequacy of nodal assessment in the oncologic-colectomy arm.
+It must not be described as a cohort in which all patients had >=12 examined nodes.
+The key robustness checks are point-estimate stability, within-stratum balance, and whether the extreme low-risk interpretation materially changes.
+======================================================================

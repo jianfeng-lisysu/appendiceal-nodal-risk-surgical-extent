@@ -1,0 +1,4 @@
+    definition    n limited_risk colectomy_risk    RD_pp
+1 Definition_A 6951    0.2894642      0.3312732 4.180903
+2 Definition_B 6676    0.2874096      0.3340721 4.666250
+3 Definition_C 6951    0.2894642      0.3312732 4.180903

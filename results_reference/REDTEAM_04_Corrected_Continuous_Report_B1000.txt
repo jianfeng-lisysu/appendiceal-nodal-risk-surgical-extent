@@ -1,0 +1,52 @@
+======================================================================
+A6 RED-TEAM — CORRECTED CONTINUOUS FIGURE 4
+======================================================================
+Frozen cohort N = 6951
+Removed PS term(s): stage_f
+Corrected weighting: no-Summary-Stage PS refitted separately within predicted-risk quintiles.
+Spline/IPCW estimator otherwise preserves the frozen continuous analysis.
+Effective curve bootstrap B = 1000 / 1000
+Effective interaction bootstrap B = 1000 / 1000
+
+== CORRECTED CONTINUOUS RD(r) ==
+risk=  3.0% | RD +1.85 pp (95% CI -2.97 to +6.99) | old +2.60 | change -0.75 pp
+risk=  4.0% | RD +0.77 pp (95% CI -2.69 to +4.43) | old +1.30 | change -0.53 pp
+risk=  5.0% | RD -0.06 pp (95% CI -3.18 to +2.89) | old +0.30 | change -0.36 pp
+risk=  7.0% | RD -1.23 pp (95% CI -4.58 to +2.03) | old -1.00 | change -0.23 pp
+risk= 10.0% | RD -2.28 pp (95% CI -5.51 to +1.34) | old -2.30 | change +0.02 pp
+risk= 14.0% | RD -2.97 pp (95% CI -5.75 to -0.04) | old -3.30 | change +0.33 pp
+risk= 20.0% | RD -3.35 pp (95% CI -7.51 to +0.32) | old -3.80 | change +0.45 pp
+risk= 28.0% | RD -3.40 pp (95% CI -7.89 to +0.73) | old -3.80 | change +0.40 pp
+risk= 40.0% | RD -3.22 pp (95% CI -7.95 to +1.39) | old -3.40 | change +0.18 pp
+risk= 50.0% | RD -3.05 pp (95% CI -9.94 to +4.03) | old -3.00 | change -0.05 pp
+
+== P10 / P90 CONTRAST ==
+P10 = 5.37% | P90 = 42.81%
+Delta = RD(P90)-RD(P10): -2.86 pp (95% CI -8.78 to +3.09) | fraction Delta<0 0.780
+Old delta = -3.29 pp | corrected-minus-old change = +0.43 pp
+
+== GLOBAL TREATMENT x CONTINUOUS-RISK INTERACTION ==
+W = 2.862 | df = 3 | P = 0.4134
+Old interaction P = 0.2264
+
+== LOCALIZED BALANCE AUDIT ==
+Q1                                         n=1391 (714/677) | max|SMD| 0.001 [nodal_risk] | PASS
+Q2                                         n=1390 (638/752) | max|SMD| 0.001 [nodal_risk] | PASS
+Q3                                         n=1390 (578/812) | max|SMD| 0.003 [nodal_risk] | PASS
+Q4                                         n=1390 (506/884) | max|SMD| 0.004 [nodal_risk] | PASS
+Q5                                         n=1390 (441/949) | max|SMD| 0.001 [nodal_risk] | PASS
+bottom_decile_under_quintile_weights       n=696 (379/317) | max|SMD| 0.134 [I(age^2)] | FAIL
+risk_lt_5pct_under_quintile_weights        n=601 (335/266) | max|SMD| 0.189 [I(age^2)] | FAIL
+
+== RED-TEAM / SCORE CHECK ==
+PASS: all localized quintiles balanced; worst max|SMD| 0.004.
+CAUTION: extreme low-risk tail imbalance under inherited quintile weights; worst max|SMD| 0.189. Keep Figure 4 strictly secondary.
+Directional pattern preserved: mean RD at 20%-50% is 4.11 pp more negative than at 3%-5%.
+No >2-pp low-risk continuous point shift; maximum 0.75 pp.
+Maximum absolute grid-point change versus old Figure 4 = 0.75 pp.
+
+Interpretation rule:
+Figure 4 is secondary/descriptive and must not be used to select a new threshold.
+The prespecified bottom-decile analysis remains the primary low-risk decision anchor.
+Restore Figure 4 only if the corrected pattern is clinically interpretable and localized balance is acceptable.
+======================================================================

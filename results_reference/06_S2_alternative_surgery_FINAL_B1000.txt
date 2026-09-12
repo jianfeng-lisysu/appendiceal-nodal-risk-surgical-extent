@@ -1,0 +1,28 @@
+== STEP 06 S2 FINAL: alternative surgery definitions ==
+Each analysis uses full-pipeline bootstrap B=1000.
+Within each bootstrap replicate: resample alternative-surgery cohort -> prep -> refit nodal-risk model -> recompute nodal risk -> refit PS/OW -> re-estimate risk quintiles -> weighted 5-year cancer-specific mortality RD.
+RD = oncologic colectomy - limited resection; RD < 0 favors oncologic colectomy.
+
+-- limited 20-39 vs colectomy 40-79 (N=7450; limited=3212; colectomy=4238) --
+  Q1: -0.4 pp (95% CI -3.0 to +3.2; effective B=1000)
+  Q2: -2.4 pp (95% CI -7.9 to +1.3; effective B=1000)
+  Q3: -1.0 pp (95% CI -6.5 to +4.5; effective B=1000)
+  Q4: -3.8 pp (95% CI -9.5 to +1.8; effective B=1000)
+  Q5: -6.8 pp (95% CI -12.2 to -0.1; effective B=1000)
+
+-- exclude code 32: limited 30-31 vs colectomy 40-41 (N=6676; limited=2602; colectomy=4074) --
+  Q1: +0.2 pp (95% CI -3.4 to +3.1; effective B=1000)
+  Q2: -3.4 pp (95% CI -7.9 to +1.4; effective B=1000)
+  Q3: -0.8 pp (95% CI -7.7 to +3.5; effective B=1000)
+  Q4: -4.2 pp (95% CI -8.9 to +2.8; effective B=1000)
+  Q5: -5.9 pp (95% CI -13.1 to +0.9; effective B=1000)
+
+-- limited 30-32 vs colectomy 40-79 (N=7115; limited=2877; colectomy=4238) --
+  Q1: +0.2 pp (95% CI -2.9 to +3.3; effective B=1000)
+  Q2: -2.3 pp (95% CI -7.7 to +1.8; effective B=1000)
+  Q3: -1.2 pp (95% CI -6.7 to +4.1; effective B=1000)
+  Q4: -3.5 pp (95% CI -9.8 to +2.0; effective B=1000)
+  Q5: -7.1 pp (95% CI -12.4 to +0.1; effective B=1000)
+
+Interpretation:
+These are alternative-exposure-definition sensitivity analyses. They test whether the main risk-stratified pattern materially depends on the exact SEER surgery-code definition; they do not change the prespecified primary exposure definition.

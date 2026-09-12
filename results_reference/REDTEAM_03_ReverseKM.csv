@@ -1,0 +1,9 @@
+"group","n","median_months","lower95_months","upper95_months"
+"Overall",6906,79,76,82
+"Limited resection",2859,71,66,75
+"Oncologic colectomy",4047,84,80,88
+"Era 2004-2009",1178,199,196,202
+"Era 2010-2017",2721,112,110,115
+"Era 2018-2023",3007,27,25,28
+"Diagnosis <=2017",3899,132,129,135
+"Diagnosis 2018-2023",3007,27,25,28
